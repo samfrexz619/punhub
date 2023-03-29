@@ -9,6 +9,7 @@ import { BiDotsVerticalRounded } from 'react-icons/bi'
 const TopNav = () => {
 
   const [search, setSearch] = useState('')
+  // const [hide, setHide] = useState(false)
 
   const handleSearch =(e: React.ChangeEvent<HTMLInputElement>)=> {
     setSearch(e.target.value);
@@ -36,7 +37,7 @@ const TopNav = () => {
             >
               Create
             </Button>
-            <Button 
+             <Button 
               className="bg-pry text-white mr-3"
               withIcon={false}
             >
