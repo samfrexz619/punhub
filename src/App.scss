@@ -23,3 +23,13 @@
 .btn {
   border: 1px solid rgba(22, 24, 35, 0.12);
 }
+
+.main__page {
+  border-left: 1px solid #DBDBDB;
+  border-right: 1px solid #DBDBDB;
+}
+
+.side-nav {
+  position: fixed;
+  min-height: 100vh;
+}

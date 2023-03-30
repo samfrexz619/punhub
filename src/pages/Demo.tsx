@@ -6,7 +6,7 @@ import '../App.scss'
 
 
 const DemoPage = () => {
-  const [search, setSearch] = useState<string>('')
+  const [search, setSearch] = useState<string>('');
 
   const handleSearch =(e: React.ChangeEvent<HTMLInputElement>)=> {
     setSearch(e.target.value);
@@ -36,6 +36,17 @@ const DemoPage = () => {
         >
             Create
         </Button>
+      </div>
+      <div className="mt-5">
+      <svg width="24" height="21" viewBox="0 0 24 21">
+        <use xlinkHref="/sprite.svg#home-icon" />
+      </svg>
+      <svg width="24" height="20" viewBox="0 0 24 20">
+        <use xlinkHref="/sprite.svg#puns-icon" />
+      </svg>
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <use xlinkHref="/sprite.svg#polls-icon" />
+      </svg>
       </div>
     </main>
    );

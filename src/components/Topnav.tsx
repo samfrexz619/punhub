@@ -16,7 +16,7 @@ const TopNav = () => {
   }
 
   return ( 
-    <header className="h-[16vh] nav">
+    <header className="h-[13vh] nav">
       <nav className='w-[91%] mx-auto h-full'>
         <div className="w-full flex h-full items-center justify-between">
           <div className="">
