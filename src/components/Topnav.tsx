@@ -16,13 +16,13 @@ const TopNav = () => {
   }
 
   return ( 
-    <header className="h-[13vh] nav">
+    <header className="nav">
       <nav className='w-[91%] mx-auto h-full'>
-        <div className="w-full flex h-full items-center justify-between">
+        <div className="w-full flex min-h-[13vh] items-center justify-between">
           <div className="">
             <img src={logo} alt="" />
           </div>
-          <div className="w-[500px]">
+          <div className="w-[450px]">
             <SearchBar
               placeholder="Search creators and punchlines"
               name="search"
@@ -44,7 +44,7 @@ const TopNav = () => {
               Log in
             </Button>
             <button className="text-2xl">
-              <BiDotsVerticalRounded  />
+              <BiDotsVerticalRounded />
             </button>
           </div>
         </div>

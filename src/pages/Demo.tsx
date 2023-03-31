@@ -2,6 +2,7 @@ import { useState } from "react";
 import SearchBar from "../components/ui/SearchBar";
 import Button from "../components/ui/Button";
 import '../App.scss'
+import RightNav from "../components/RightNav";
 
 
 
@@ -26,27 +27,17 @@ const DemoPage = () => {
           className="bg-pry text-white"
           withIcon={false}
         >
-            Log in
+            Log inH
         </Button>
       </div>
-      <div className="mt-5">
-        <Button 
-          className="bg-white text-pry btn"
-          withIcon={true}
-        >
-            Create
-        </Button>
-      </div>
+      
       <div className="mt-5">
       <svg width="24" height="21" viewBox="0 0 24 21">
         <use xlinkHref="/sprite.svg#home-icon" />
       </svg>
-      <svg width="24" height="20" viewBox="0 0 24 20">
-        <use xlinkHref="/sprite.svg#puns-icon" />
-      </svg>
-      <svg width="24" height="24" viewBox="0 0 24 24">
-        <use xlinkHref="/sprite.svg#polls-icon" />
-      </svg>
+      </div>
+      <div>
+        <RightNav  />
       </div>
     </main>
    );

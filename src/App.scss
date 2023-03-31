@@ -4,6 +4,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  // min-height: 14vh;
   // margin-top: 20rem;
 }
 
@@ -30,6 +31,12 @@
 }
 
 .side-nav {
-  position: fixed;
+  // position: fixed;
   min-height: 100vh;
+  a {
+    color: #959DA1;
+  }
+  a.active {
+    color: #133E53;
+  }
 }
