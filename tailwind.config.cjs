@@ -8,7 +8,10 @@ module.exports = {
     extend: {
       colors: {
         pry: '#133E53',
-        text: '#959DA1'
+        text: '#959DA1',
+      },
+      fontFamily: {
+        dmSans: ['DM Sans', 'sans-serif']
       }
     },
   },
