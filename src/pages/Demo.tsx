@@ -1,8 +1,8 @@
 import { useState } from "react";
 import SearchBar from "../components/ui/SearchBar";
-import Button from "../components/ui/Button";
 import '../App.scss'
-import RightNav from "../components/RightNav";
+import Tab from "../components/Tabs/Tab";
+import TabPane from "../components/Tabs/TabPane";
 
 
 
@@ -22,14 +22,6 @@ const DemoPage = () => {
           handleSearch={handleSearch}
         />
       </div>
-      <div>
-        <Button 
-          className="bg-pry text-white"
-          withIcon={false}
-        >
-            Log inH
-        </Button>
-      </div>
       
       <div className="mt-5">
       <svg width="24" height="21" viewBox="0 0 24 21">
@@ -37,7 +29,20 @@ const DemoPage = () => {
       </svg>
       </div>
       <div>
-        <RightNav  />
+        
+      </div>
+      <div>
+        <Tab>
+          <TabPane title="first one">
+            <div>the testing one</div>
+          </TabPane>
+          <TabPane title="second one">
+            <div>the testing second</div>
+          </TabPane>
+          <TabPane title="third one">
+            <div>the testing third</div>
+          </TabPane>
+        </Tab>
       </div>
     </main>
    );

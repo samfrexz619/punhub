@@ -1,6 +1,6 @@
 import { AiOutlinePlus } from 'react-icons/ai'
 interface ButtonProps {
-  children: string;
+  children: React.ReactElement;
   className: string;
   withIcon: boolean
 }

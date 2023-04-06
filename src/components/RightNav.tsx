@@ -7,7 +7,7 @@ const RightNav = () => {
     <aside className='sticky top-[13vh] w-full'>
       <div className='w-[94%] mx-auto py-10'>
         <div className='w-full'>
-          <h3 className='text-[#070808] text-[18px] text-center font-bold py-5'>Get the app</h3>
+          <h3 className='text-[#070808] text-[18px] text-center font-bold py-5'>Get the app.</h3>
           <img src={phone} alt="" className='block float-right'/>
         </div>
         <div className='w-full mx-auto flex justify-end gap-3'>

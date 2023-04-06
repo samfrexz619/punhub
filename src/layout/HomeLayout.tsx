@@ -27,7 +27,7 @@ const HomeLayout = () => {
                 {
                   links.map(link => (
                     <h1 key={link.id} className='capitalize text-2xl'>
-                      {link.path === pathname ? link.name : null}
+                      { link.path === pathname ? link.name : null }
                     </h1>
                   ))
                 }

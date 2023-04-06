@@ -31,12 +31,28 @@
 }
 
 .side-nav {
-  // position: fixed;
-  min-height: 100vh;
+  position: sticky;
+  top: 13vh;
   a {
     color: #959DA1;
   }
   a.active {
     color: #133E53;
   }
+  .bord {
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
+    border-bottom: 1px solid rgba(22, 24, 35, 0.12);
+  }
+  .text {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(85.51deg, #184E68 60.82%, #57CA85 112.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+}
+
+.divide {
+  // border-top: 1px solid rgba(22, 24, 35, 0.12);
+  border-bottom: 1px solid rgba(22, 24, 35, 0.12);
 }
