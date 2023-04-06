@@ -60,7 +60,7 @@ const SideNav = () => {
             creators.map(content => (
               <div key={content.id} className='py-3'>
                 <div className='flex items-center gap-4'>
-                  <div className='creators'>
+                  <div className='creators font-algre'>
                     <h2>CW</h2>
                   </div>
                   <div>

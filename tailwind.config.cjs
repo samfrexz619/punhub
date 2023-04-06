@@ -11,7 +11,8 @@ module.exports = {
         text: '#959DA1',
       },
       fontFamily: {
-        dmSans: ['DM Sans', 'sans-serif']
+        dmSans: ['DM Sans', 'sans-serif'],
+        algre: ['Alegreya Sans', 'sans-serif']
       }
     },
   },
