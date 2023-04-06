@@ -3,7 +3,7 @@ import SearchBar from "../components/ui/SearchBar";
 import '../App.scss'
 import Tab from "../components/Tabs/Tab";
 import TabPane from "../components/Tabs/TabPane";
-
+import hot from "../assets/hot.svg"
 
 
 const DemoPage = () => {
@@ -29,11 +29,11 @@ const DemoPage = () => {
       </svg>
       </div>
       <div>
-        
+        <img src="" alt="" />
       </div>
       <div>
         <Tab>
-          <TabPane title="first one">
+          <TabPane title="first one" image={<img src={hot} alt=""/>}>
             <div>the testing one</div>
           </TabPane>
           <TabPane title="second one">

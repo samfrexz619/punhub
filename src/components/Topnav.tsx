@@ -16,7 +16,7 @@ const TopNav = () => {
   }
 
   return ( 
-    <header className="nav">
+    <header className="nav z-50">
       <nav className='w-[91%] mx-auto h-full'>
         <div className="w-full flex min-h-[13vh] items-center justify-between">
           <div className="">
@@ -35,13 +35,13 @@ const TopNav = () => {
               className="bg-white text-pry btn mr-4"
               withIcon={true}
             >
-              Create
+              <span>Create</span>
             </Button>
              <Button 
               className="bg-pry text-white mr-3"
               withIcon={false}
             >
-              Log in
+              <span>Log in</span>
             </Button>
             <button className="text-2xl">
               <BiDotsVerticalRounded />

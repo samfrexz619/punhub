@@ -2,6 +2,7 @@ import { ReactElement } from "react";
 
 interface Props {
   title: string;
+  image?: ReactElement;
   children: ReactElement | ReactElement[]
 }
 const TabPane = ({children}: Props): JSX.Element => {
@@ -12,4 +13,4 @@ const TabPane = ({children}: Props): JSX.Element => {
    );
 }
  
-export default TabPane;
+export default TabPane; 

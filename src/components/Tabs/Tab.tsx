@@ -10,8 +10,8 @@ const Tab = ({children, tabIndex}: TabProps) => {
 
   const [seletedTabIndex, setSeletedTabIndex] = useState(tabIndex || 0)
   return ( 
-    <div>
-      <div>
+    <div className="w-full">
+      <div className="flex justify-between pb-4">
       {
         children.map((child, index) => (
           <TabTitle  
@@ -20,7 +20,8 @@ const Tab = ({children, tabIndex}: TabProps) => {
             index={index}
             isActive={index === seletedTabIndex}
             setSelectedTab={setSeletedTabIndex}
-          />
+            image={child.props.image}
+          /> 
         ))
       }
       </div>

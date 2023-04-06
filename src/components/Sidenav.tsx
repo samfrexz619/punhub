@@ -2,13 +2,18 @@ import { useContext } from 'react';
 import { LinkContext } from '../context/LinkContext';
 import { NavLink } from 'react-router-dom';
 import SidenavIcon from './SidenavIcon';
-import '../App.scss'
 import Button from './ui/Button';
+import { suggestedArtistes, suggestedCreators } from '../data';
+import '../App.scss'
 
 
 const SideNav = () => {
 
   const links = useContext(LinkContext)
+
+  const artistes = suggestedArtistes
+
+  const creators = suggestedCreators;
   
   return ( 
     <aside className='side-nav py-7'>
@@ -35,6 +40,32 @@ const SideNav = () => {
             </Button>
           </div>
           </div>
+        </div>
+        <div className='px-3'>
+          <h2 className='mb-4'>Suggested Artistes</h2>
+          {
+            artistes.map(art => (
+              <div key={art.id} className='py-2'>
+                <h4 className='capitalize text-[#161823] font-semibold'>
+                  {art.artiste}
+                </h4>
+                <small>{art.puns_num} puns</small>
+              </div>
+            ))
+          }
+        </div>
+        <div className='bord py-4 mt-5 w-[93%] px-3'>
+          <h2 className='py-5'>Suggested Creators</h2>
+          {
+            creators.map(content => (
+              <div key={content.id} className='py-3'>
+                <h3 className='capitalize text-[#161823] font-semibold'>
+                  {content.creator}
+                </h3>
+                <small>{content.content_num} Contents</small>
+              </div>
+            ))
+          }
         </div>
     </aside>
    );
