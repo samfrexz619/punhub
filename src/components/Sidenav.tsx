@@ -59,10 +59,17 @@ const SideNav = () => {
           {
             creators.map(content => (
               <div key={content.id} className='py-3'>
-                <h3 className='capitalize text-[#161823] font-semibold'>
-                  {content.creator}
-                </h3>
-                <small>{content.content_num} Contents</small>
+                <div className='flex items-center gap-4'>
+                  <div className='creators'>
+                    <h2>CW</h2>
+                  </div>
+                  <div>
+                    <h3 className='capitalize text-[#161823] font-semibold leading-3'>
+                      {content.creator}
+                    </h3>
+                    <small>{content.content_num} Contents</small>
+                  </div>
+                </div>
               </div>
             ))
           }
