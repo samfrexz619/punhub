@@ -74,3 +74,28 @@
   border-radius: 4px;
   width: 110px;
 }
+
+.text-input {
+  border: 1px solid #DBDBDB;
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin: 15px auto;
+  input {
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+  .icon {
+    margin: auto 3px;
+    font-size: 22px;
+  }
+  .input__btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: inherit;
+  }
+}

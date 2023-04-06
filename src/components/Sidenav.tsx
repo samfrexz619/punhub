@@ -67,7 +67,9 @@ const SideNav = () => {
                     <h3 className='capitalize text-[#161823] font-semibold leading-3'>
                       {content.creator}
                     </h3>
-                    <small>{content.content_num} Contents</small>
+                    <small>
+                      {content.content_num} Contents
+                    </small>
                   </div>
                 </div>
               </div>

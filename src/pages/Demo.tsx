@@ -1,14 +1,26 @@
-import { useState } from "react";
+import { ReactEventHandler, useState } from "react";
 import SearchBar from "../components/ui/SearchBar";
 import '../App.scss'
 import Tab from "../components/Tabs/Tab";
 import TabPane from "../components/Tabs/TabPane";
 import hot from "../assets/hot.svg"
+import TextInput from "../components/ui/TextInput";
 
 
 const DemoPage = () => {
   const [search, setSearch] = useState<string>('');
 
+  const [input, setInput] = useState({
+    password: '',
+    email: '',
+    text: ''
+  })
+
+  const handleInput =(e: React.ChangeEvent<HTMLInputElement>)=> {
+    const name = (e.target as HTMLInputElement).name
+    const value = (e.target as HTMLInputElement).value
+    setInput(prevInput => ({...prevInput, [name]: value}))
+  }
   const handleSearch =(e: React.ChangeEvent<HTMLInputElement>)=> {
     setSearch(e.target.value);
   }
@@ -43,6 +55,29 @@ const DemoPage = () => {
             <div>the testing third</div>
           </TabPane>
         </Tab>
+      </div>
+      <div>
+        <TextInput 
+          type="password"
+          placeholder="enter password"
+          name="password"
+          value={input.password}
+          handleInput={handleInput}
+        />
+        <TextInput 
+          type="email"
+          placeholder="enter email"
+          name="email"
+          value={input.email}
+          handleInput={handleInput}
+        />
+        <TextInput 
+          type="text"
+          placeholder="enter text"
+          name="text"
+          value={input.text}
+          handleInput={handleInput}
+        />
       </div>
     </main>
    );
